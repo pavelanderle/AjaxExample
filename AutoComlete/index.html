@@ -8,7 +8,7 @@
 <body>
   <form>
     <label for="a">Zadej Jméno:</label>
-    <input onchange="getName()" type="text" id="name">
+    <input onkeyup="getName()" type="text" id="name">
   </form>
     <script>
 
@@ -21,7 +21,7 @@
             this.responseText;
           }
         };
-        xhttp.open("GET", "autocomplete.php?name="+name, true);
+        xhttp.open("GET", "autocomplet.php?name="+name, true);
         xhttp.send();
       }
     </script>
